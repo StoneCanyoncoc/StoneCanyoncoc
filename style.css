@@ -1,0 +1,15 @@
+/* color scheme */
+/* brownish banners: r 203, g 175, b 145 */
+/* dark brown text: r 124, g 106, b 88 */
+/* p tag color: r 35, g 32, b26 */
+/* dark brown banner: r 124, g106, b88 */
+/* h3-h6 text: r 78, g 76, b71 */
+/* very dark banner: r 35, g 32, b 26 */
+/* banner body color: r244, g 240, b242 */
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(244,240, 242, 0.9);
+
+}
