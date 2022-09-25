@@ -6,10 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        banner
+    <div id="parallaxBanner">
+        <img src="./media/background-image.webp"/>
     </div>
+    <div class="header">
+        <div class="logo">
+            <img src="./media/Stone Canyon Logo.png">
+        </div>
+        <div class="menu">
+            <div><a href="">Home</a></div>
+            <div><a href="">About</a></div>
+            <div><a href="">Articles</a></div>
+            <div><a href="">Sermons</a></div>
+            <div><a href="">Contact</a></div>
+            <div><a href=""><i class="fa fa-facebook-square"></i></a></div>
+            <div><a href=""><i class="fa fa-user-circle"></i>Log in</a></div>
+        </div>
+    </div>
+    <div class="clear-banner"></div>
+    <div class="meeting-times">
+        <div>Sunday Bible class</div>
+        <div>Sunday Worship</div>
+        <div>Wednesday Bible class</div>
+    </div>
+    <div class="about-us">
+        <div><img src="./media/singing.webp"/></div>
+        <div>
+            <div>about us</div>
+            <div>loerm ipsum</div>
+        </div>
+    </div>
+<script>
+    window.addEventListener("scroll", function() {
+        const initDist = -80;
+        let distance = window.scrollY + initDist;
+        
+        if (distance > 200) {
+            return;
+        }
+        document.getElementById("parallaxBanner").style.top = `${distance * 0.5}px`;
+    })
+</script>
 </body>
+
 </html>
