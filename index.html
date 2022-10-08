@@ -17,38 +17,49 @@
             <img src="./media/Stone Canyon Logo.png">
         </div>
         <div class="menu">
-            <div><a href="">Home</a></div>
+            <div><a href="./index.html">Home</a></div>
             <div><a href="">About</a></div>
             <div><a href="">Articles</a></div>
             <div><a href="">Sermons</a></div>
             <div><a href="">Contact</a></div>
-            <div><a href=""><i class="fa fa-facebook-square"></i></a></div>
-            <div><a href=""><i class="fa fa-user-circle"></i>Log in</a></div>
+            <div><a href=""><i class="fa fa-facebook-square" style="color:#3b5998; font-size:24px"></i></a></div>
+            <div><a href=""><i class="fa fa-user-circle"></i> Log in</a></div>
         </div>
     </div>
     <div class="clear-banner"></div>
     <div class="meeting-times">
-        <div>Sunday Bible class</div>
-        <div>Sunday Worship</div>
-        <div>Wednesday Bible class</div>
+        <div>
+            <p>Sunday Bible class</p>
+            <p>Starting at 9 am</p>
+        </div>
+        <div>
+            <p>Sunday Worship</p>
+            <p>Starting at 10 am & 5 pm</p>
+        </div>
+        <div>
+            <p>Wednesday Bible class</p>
+            <p>Starting at 7 pm</p>
+        </div>
     </div>
     <div class="about-us">
         <div><img src="./media/singing.webp"/></div>
         <div>
-            <div>about us</div>
-            <div>loerm ipsum</div>
+            <h2>About Us</h2>
+            <p>
+                Stone Canyon church of Christ is a community of believers who wish to serve and please God. When we worship, teach, live, and speak we look to the Bible to learn how He would want us to act. We love Him with all that we are and dearly love our fellow man. We hope you will come visit us soon.
+            </p>
         </div>
     </div>
     <div class="scripture">
         <p>
             "Therefore, brothers, by the mercies of God, I urge you to present your bodies as a living sacrifice, holy and pleasing to God; this is your spiritual worship.”
         </p>
-        <h6>
+        <h3>
             Romans 12:1 ESV
-        </h6>
+        </h3>
     </div>
     <div class="sermon-audio">
-        <div>audio content here</div>
+        <div>sermon content here</div>
     </div>
     <div class="events">
         <div class="blog-list">
@@ -117,11 +128,11 @@
             </div>
         </div>
         <div class="event-list">
-            <h3>Upcoming Events</h3>
+            <h1>Upcoming Events</h1>
             <div>
                 <div class="event">
                     <div>
-                        <h4>Fall Gospel Meeting</h4>
+                        <h2>Fall Gospel Meeting</h2>
                         <p class="less-info">Sun, Oct 25 | Stone Canyon church of Christ</p>
 
                         <p class="more-info">
@@ -129,12 +140,39 @@
                             Stone Canyon church of Christ, 15640 East 76th Street North, Owasso, OK, USA
                             Come learn what God says!
                         </p>
-                        <a>Details</a>
+                        
                     </div>
-                    
+                    <a href="">Details</a>
                 </div>
-                <div></div>
-                <div></div>
+                <div class="event">
+                    <div>
+                        <h2>Song & Prayer Service</h2>
+                        <p class="less-info">Sun, Mar 29 | Stone Canyon church of Christ</p>
+    
+                        <p class="more-info">
+                            Mar 29, 2020, 10:00 AM – 11:15 AM
+                            Stone Canyon church of Christ, 15640 E 76th St N, Owasso, OK 74055, USA
+                            Praise God with us!
+                        </p>
+                        
+                    </div>
+                    <a href="">Details</a>
+                </div>
+                <div class="event">
+                    <div>
+                        <h2>Feburary Q&A Night</h2>
+                        <p class="less-info">Sun, Feb 09 | Stone Canyon church of Christ</p>
+    
+                        <p class="more-info">
+                            Feb 09, 2020, 5:00 PM – 7:05 PM
+                            Stone Canyon church of Christ, 15640 E 76th St N, Owasso, OK 74055, USA
+                            Learn and Grow!
+                        </p>
+                        
+                    </div>
+                    <a href="">Details</a>
+
+                </div>
             </div>
 
         </div>
@@ -157,7 +195,7 @@
         const initDist = -80;
         let distance = window.scrollY + initDist;
         
-        if (distance > 200) {
+        if (distance > 600) {
             return;
         }
         document.getElementById("parallaxBanner").style.top = `${distance * 0.5}px`;
