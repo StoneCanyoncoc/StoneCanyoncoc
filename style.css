@@ -236,7 +236,6 @@ body {
 
 .contact {
     height:400px;
-    border:solid black 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,7 +252,6 @@ body {
 
 .maps {
     height:500px;
-    border:solid black 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +261,6 @@ body {
 
 .footer {
     height:200px;
-    border:solid black 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
